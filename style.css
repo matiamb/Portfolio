@@ -1,13 +1,32 @@
+.banner {
+    background-color: #012F50;
+}
+
+.header {
+    background-color: #012F50;
+}
+
 .cont2 {
-    background-color: #CAD4D8;
+    background-color: #DFEEFF;
+}
+
+.cont3 {
+    background-color: #DFEEFF;
 }
 
 .experience {
-    background-color: #CAD4D8;
+    background-color: #DFEEFF;
 }
 
-.profile {
-    padding-left: 100px;
+.skills {
+    background-color: #DFEEFF;
+}
+
+.profilePic {
+    width: 30px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .logos {
@@ -15,3 +34,29 @@
     width: 75px;
     padding: 5px;
 }
+
+.logos-exp {
+    height: 75px;
+    width: auto;
+}
+
+.ola {
+    margin-left: 200px;
+}
+
+.dxc {
+    margin-right: 200px;
+}
+
+.card-body {
+    background-color: #0E5D97;
+    color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.loginbtn {
+    background-color: #DFEEFF;
+    color: #012F50;
+}
+

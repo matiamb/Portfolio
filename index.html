@@ -8,19 +8,23 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1091b9021f.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
 <!--Header container-->
 
-    <div class="header conteiner-fluid bg-primary" >
+    <div class="header conteiner-fluid bsg-primary" >
         <div class="row p-2 align-items-center">
-            <div class="col text-white">Matias Mariano Ambrosi</div>
-            <a class="col-1 text-white" href="">Instagram</a>
-            <a class='col-1 text-white' href="">LinkedIn</a>
+            <div class="col text-white"><img src="./images/profile.jpg" class="profilePic">Matias Mariano Ambrosi</div>
+              <div class="col-1">
+                <a class="text-white p-1" href="mailto:matiambrosi@gmail.com"><i class="far fa-envelope-open fa-xl"></i></a>
+                <a class='text-white p-1' href="https://www.linkedin.com/in/matias-mariano-ambrosi-a9498620a/" target="_blank"><i class="fab fa-linkedin fa-2xl"></i></a>
+              </div>
 
             <!--Modal atempt-->
-            <button type='button' class="col-1 btn-sm btn-dark me-2" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+            <button type='button' class="loginbtn col-1 btn-sm me-2" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+            
             <!--Modal card-->
             <div class="modal fade" id="login">
               <div class="modal-dialog modal-dialog-centered">
@@ -34,6 +38,8 @@
 
                   <!--Modal body-->
                   <div class="modal-body">
+
+                    <!--Login Form-->
                     <form action="">
                       <div class="form-floating mb-2">
                         <input type="text" class="form-control" id="user" placeholder="Enter your username" name="Username">
@@ -43,19 +49,20 @@
                         <input type="text" class="form-control" id="password" placeholder='Password' name="Password">
                         <label for="password">Password</label>
                       </div>
+
+                      <!--Remember me checkbox-->
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="rememberme" name="rememberme" unchecked>
                         <label for="rememberme">Remember me</label>
                       </div>
                     </form>
+
                   </div>
 
-                    <!--Modal footer-->
+                  <!--Modal footer-->
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enter</button>
                   </div>
-
-                </div>
                 </div>
               </div>
             </div>
@@ -64,7 +71,7 @@
 
 <!--Banner Container-->
 
-    <div class="banner conteiner-fluid bg-dark rounded border border-muted p-3">
+    <div class="banner conteiner-fluid bsg-dark p-3">
       <img src="./images/banner.png" alt="Banner" class="row w-50 mx-auto d-block" >
       <!--<img src="./images/profile.jpg" class="profile" style="height:150px; width:auto;">-->
     </div>
@@ -98,14 +105,24 @@
 
     <div class="experience container-fluid rounded border border-muted p-3">
       <h3 class="">Experiencia</h3>
-      <div class="row align-items-center">
+      <div class="row justify-content-between">
+        <div class="ola card p-2" style="width: 300px;">
+          <div class="card-img-top"><img class='logos-exp mx-auto d-block' src="./images/logo-olapic.png"></div>
+          <div class="card-body">Content moderator for Olapic from 2016-2022</div>        
+        </div>
+        <div class="dxc card p-2" style="width: 300px;">
+          <div class="card-img-top"><img class='logos-exp mx-auto d-block' src="./images/dxc.png"></div>
+          <div class="card-body">ITO Service Delivery consultant for DXC Technology since January 2022</div>
+        </div>
+      </div>
+      <!--<div class="row align-items-center">
         <img class='logos col-1' src="./images/logo-olapic.png">
         <div class="col">Content moderator for Olapic from 2016-2022</div>
       </div>
       <div class="row align-items-center">
         <img class='logos col-1' src="./images/dxc.png">
         <div class="col">ITO Service Delivery consultant for DXC Technology from 2022</div>
-      </div>
+      </div>-->
       <h3 class="">Educacion</h3>
       <div class="row align-items-center">
         <img src="./images/fcefyn.png" alt="logo universidad de cordoba" class="logos col-1">
@@ -121,7 +138,14 @@
 
     <div class="skills conteiner-fluid rounded border border-muted p-3">
       <div class=""><h3>Hard & Soft Skills</h3></div>
-
+      <div>Skill 1</div>
+      <div class="rounded border border-dark progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 80%;">something</div>
+      <div>Skill 2</div>
+      <div class="rounded border border-dark progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 75%;">something</div>
+      <div>Skill 3</div>
+      <div class="rounded border border-dark progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 90%;">something else</div>
+      <div>Skill 4</div>
+      <div class="rounded border border-dark progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 85%;">more something</div>
     </div>
 
 <!--Projects container-->
