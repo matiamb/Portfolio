@@ -1,15 +1,15 @@
-.banner {
+.banner, .header, .footer {
     background-color: #012F50;
 }
 
-.header {
+/*.header {
     background-color: #012F50;
-}
+}*/
 
-.cont2 {
+.cont2, .cont3, .experience, .skills {
     background-color: #DFEEFF;
 }
-
+/*
 .cont3 {
     background-color: #DFEEFF;
 }
@@ -20,7 +20,7 @@
 
 .skills {
     background-color: #DFEEFF;
-}
+}*/
 
 .profilePic {
     width: 30px;
@@ -40,12 +40,10 @@
     width: auto;
 }
 
-.ola {
-    margin-left: 200px;
-}
-
-.dxc {
-    margin-right: 200px;
+.dxc, .ola {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #012F50;
 }
 
 .card-body {
@@ -60,3 +58,12 @@
     color: #012F50;
 }
 
+.intrestbtn {
+    background-color: #012F50;
+    color: #DFEEFF;
+}
+
+.footer {
+    height: 50px;
+    color: #DFEEFF;
+}
